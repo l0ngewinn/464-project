@@ -20,13 +20,13 @@ a:visited {
 a:hover {
     text-decoration: none;
     color: bisque;
-    font-size: small;
+    font-size: large;
 }
 
 a:active {
     text-decoration: none;
     color: grey;
-    font-size: medium;
+    font-size: large;
 }
 
 h2 {
@@ -53,6 +53,37 @@ h2 {
 .title {
     color: darkgoldenrod;
     font-size: xx-large;
+}
+
+.projectsDropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+.projectsDropdown:hover .dropdownContent {
+    display: block;
+}
+
+.dropdownContent a {
+    display: block;
+    color: darkgoldenrod;
+    padding: 10px;
+    text-decoration: none;
+    font-size: small;
+}
+
+.dropdownContent a:hover {
+    color: white;
+    background-color: darkgoldenrod;
+    font-size: small;
 }
 
 .content {
