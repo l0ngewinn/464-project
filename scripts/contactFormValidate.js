@@ -5,9 +5,16 @@ function contactFormValidate(contactFormObj) {
     var emailOK = emailValid(email)
     var nameOK = nameValid(firstName, lastName)
 
-    if (emailOK == true && nameOK == true) {
+    if (emailOK && nameOK) {
         return true;
+    } else if (emailOK && !nameOK) {
+        alert('Invalid first or last name. Alphabetical characters only. Please re-enter.');
+        return false;
+    } else if (!emailOK && nameOK) {
+        alert('Invalid email address. Please re-enter.');
+        return false;
     } else {
+        alert('Invalid email address and name. Please re-enter.')
         return false;
     }
 }
