@@ -1,8 +1,17 @@
 body {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     margin: 0px;
     background-color: white;
     padding-top: 25px;
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
 }
 
 a:link {
@@ -102,6 +111,16 @@ h2 {
     width: 100%;
 }
 
+/* .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    height: 5%;
+    padding: 5px;
+    margin-bottom: 0px;
+} */
+
 /* aboutme.html */
 
 
@@ -109,3 +128,51 @@ h2 {
 
 
 /* resume.html */
+
+
+/* contact.html */
+.back {
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+#contactForm {
+    height: 50vh;
+    text-align: center;
+    padding: 25px;
+    background-color: bisque;
+    border-radius: 16px;
+}
+
+#firstName {    
+    width: 90%;
+}
+
+#lastName {
+    width: 90%
+}
+
+#email {
+    width: 95%;
+    margin-top: 25px;
+}
+
+#message {
+    width: 95%;
+    margin-top: 25px;
+    height: 10vh;
+}
+
+#submit {
+    margin-top: 25px;
+    background-color: darkgoldenrod;
+    border-radius: 16px;
+    color: white;
+}
