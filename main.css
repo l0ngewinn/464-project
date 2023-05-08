@@ -1,52 +1,36 @@
 body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    margin: 0px;
     background-color: white;
-    padding-top: 25px;
-}
-
-footer {
-    margin-top: auto;
-    display: flex;
-    justify-content: center;
-    background-color: bisque;
+    margin: 0;
 }
 
 a:link {
-    color: darkgoldenrod;
     text-decoration: none;
     font-size: medium;
 }
 
 a:visited {
+    color: black;
     text-decoration: none;
-    color: darkgoldenrod;
     font-size: medium;
 }
 
 a:hover {
     text-decoration: none;
-    color: bisque;
-    font-size: large;
+    color: darkgoldenrod;
 }
 
 a:active {
     text-decoration: none;
     color: grey;
-    font-size: large;
-}
-
-h2 {
-    color: darkgoldenrod;
 }
 
 .head {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    position: sticky;
     padding-left: 25vh;
     padding-right: 15vh;
     height: 10vh;
@@ -55,8 +39,12 @@ h2 {
 .navigation {
     display: flex;
     width: 70%;
-    justify-content: space-around;
+    justify-content: flex-end;
     padding-left: 10%;
+}
+
+#resume {
+    padding-left: 10vh;
 }
 
 .title {
@@ -84,6 +72,7 @@ h2 {
 .dropdownContent a {
     display: block;
     color: darkgoldenrod;
+    background-color: white;
     padding: 10px;
     text-decoration: none;
     font-size: small;
@@ -95,39 +84,65 @@ h2 {
     font-size: small;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 /* main.html */
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.home {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    width: 100%;
+    padding-bottom: 15vh;
+}
+
+.caption {
+    padding-left: 10vh;
+}
+
 .mainTable {
-    padding: 25px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.projectsMain {
+    font-size: xx-large;
     text-align: center;
 }
 
 .joji {
-    width: 100%;
+    height: 45vh;
+    border-radius: 20px;
 }
 
-/* .footer {
+.joji:hover {
+    height: 40vh;
+}
+
+.interactables {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: bisque;
-    height: 5%;
-    padding: 5px;
-    margin-bottom: 0px;
-} */
+}
 
-/* aboutme.html */
-
+.headshot {
+    border-radius: 100px;
+    height: 30vh;
+}
 
 /* projects.html */
-
-
-/* resume.html */
 
 
 /* contact.html */
@@ -175,4 +190,12 @@ h2 {
     background-color: darkgoldenrod;
     border-radius: 16px;
     color: white;
+}
+
+/* thankyou.html */
+.thankyou {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
