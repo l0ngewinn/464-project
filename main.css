@@ -6,7 +6,26 @@ body {
     margin: 0;
 }
 
+body.dark-mode {
+    background-color:black;
+    color: white;
+}
+
+#dark-mode-toggle {
+    margin-left: 5vh;
+    background-color: darkgoldenrod;
+    border-radius: 16px;
+    color: white;
+}
+#dark-mode-toggle.dark-mode {
+    margin-left: 5vh;
+    background-color: darkgoldenrod;
+    border-radius: 16px;
+    color: white;
+}
+
 a:link {
+    color: black;
     text-decoration: none;
     font-size: medium;
 }
@@ -25,6 +44,12 @@ a:hover {
 a:active {
     text-decoration: none;
     color: grey;
+}
+
+a.dark-mode {
+    color: white;
+    text-decoration: none;
+    font-size: medium;
 }
 
 .head {
