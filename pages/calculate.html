@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- index.html for project/main.html -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Calculate Water Intake</title>
+  <link rel="stylesheet" href="../main.css" />
+    <script src="../scripts/calculateWaterIntake.js"></script>
+</head>
+
+<body>
+    <div class="head">
+        <a href="../../main.html"><h1 class='title'>Long Nguyen</h1></a>
+        <div class="navigation">
+          <div class="projectsDropdown">
+            <a href="./projects/projects.html">PROJECTS</a>
+            <div class="dropdownContent">
+              <a href="./projects/project1.html">Project 1</a>
+              <a href="./projects/project2.html">Project 2</a>
+            </div>
+          </div>
+          <a id="water" href="./calculate.html">CALCULATE WATER INTAKE</a>
+          <a id="resume" href="../../resume.pdf" target="_blank">RESUME</a>
+        </div>
+    </div>
+    <form id="waterForm" onsubmit="calculateWaterIntake()">
+        <div class="water-form">
+            <label for="sex" required>Choose your sex:</label>
+            <select name="sex" id="sex">
+                <option value="select">Select...</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <input id="weight" type="number" placeholder="Weight (lbs)" />
+            <label for="activity">Choose your activity level:</label>
+            <select name="activity" id="activity">
+                <option value="select">Select...</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="active">Active</option>
+            </select>
+            <label for="weather">How is the weather outside?:</label>
+            <select name="weather" id="weather">
+                <option value="select">Select...</option>
+                <option value="hot">Hot</option>
+                <option value="warm">Warm</option>
+                <option value="temperate">Temperate</option>
+                <option value="cold">Cold</option>
+            </select>
+            <input id="submitWater" type="submit" value="Calculate" />
+        </div>
+    </form>
+    </div>
+</body>
+</html>

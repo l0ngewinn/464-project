@@ -12,13 +12,19 @@
         <?php
             include("./connectToDatabase.php");
         ?>
+        <script>
+            $(function() {
+                $("#thankyou").load("../pages/thankyou.html");
+            });
+        </script>
     </header>
     <main>
         <article>
             <?php 
                 include("../scripts/registrationFormProcess.php")
-                header('Location: ../pages/thankyou.html')
             ?>
+            <div id="thankyou">
+            </div>
         </article>
     </main>
 </body>

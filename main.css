@@ -43,9 +43,13 @@ a:active {
     padding-left: 10%;
 }
 
-#resume {
-    padding-left: 10vh;
+#water {
+    padding-left: 5vh;
 }
+#resume {
+    padding-left: 5vh;
+}
+
 
 .title {
     color: darkgoldenrod;
@@ -190,6 +194,14 @@ a:active {
     background-color: darkgoldenrod;
     border-radius: 16px;
     color: white;
+}
+
+/* Water Form */
+.water-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* thankyou.html */
