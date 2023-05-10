@@ -1,4 +1,5 @@
-function contactFormValidate(contactFormObj) {
+function contactFormValidate() {
+    contactFormObj = document.getElementById('contactForm')
     var email = contactFormObj.email.value;
     var firstName = contactFormObj.firstName.value
     var lastName = contactFormObj.lastName.value
