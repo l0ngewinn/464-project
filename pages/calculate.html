@@ -2,9 +2,9 @@
 <!-- index.html for project/main.html -->
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Calculate Water Intake</title>
-  <link rel="stylesheet" href="../main.css" />
+    <meta charset="utf-8">
+    <title>Calculate Water Intake</title>
+    <link rel="stylesheet" href="../main.css" />
     <script src="../scripts/calculateWaterIntake.js"></script>
 </head>
 
@@ -25,29 +25,40 @@
     </div>
     <form id="waterForm" onsubmit="calculateWaterIntake()">
         <div class="water-form">
-            <label for="sex" required>Choose your sex:</label>
-            <select name="sex" id="sex">
-                <option value="select">Select...</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-            </select>
-            <input id="weight" type="number" placeholder="Weight (lbs)" />
-            <label for="activity">Choose your activity level:</label>
-            <select name="activity" id="activity">
-                <option value="select">Select...</option>
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="active">Active</option>
-            </select>
-            <label for="weather">How is the weather outside?:</label>
-            <select name="weather" id="weather">
-                <option value="select">Select...</option>
-                <option value="hot">Hot</option>
-                <option value="warm">Warm</option>
-                <option value="temperate">Temperate</option>
-                <option value="cold">Cold</option>
-            </select>
-            <input id="submitWater" type="submit" value="Calculate" />
+            <h1>Calculate Your Suggested Water Intake!</h1>
+            <div id="option">
+                <label for="sex" required>Choose your sex:</label>
+                <select name="sex" id="sex">
+                    <option value="select">Select...</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div id="option">
+                <input id="weight" type="number" placeholder="Weight (lbs)" />
+            </div>
+            <div id="option">
+                <label for="activity">Choose your activity level:</label>
+                <select name="activity" id="activity">
+                    <option value="select">Select...</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="active">Active</option>
+                </select>
+            </div>
+            <div id="option">
+                <label for="weather">How is the weather outside?:</label>
+                <select name="weather" id="weather">
+                    <option value="select">Select...</option>
+                    <option value="hot">Hot</option>
+                    <option value="warm">Warm</option>
+                    <option value="temperate">Temperate</option>
+                    <option value="cold">Cold</option>
+                </select>
+            </div>
+            <div id="option">
+                <input id="submitWater" type="submit" value="Calculate" />
+            </div>
         </div>
     </form>
     </div>

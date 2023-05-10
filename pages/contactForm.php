@@ -17,20 +17,20 @@
     </div>
     <div class="contact">
         <h2>Contact Me</h2>
-        <form id="contactForm" onsubmit="return contactFormValidate()" method="post" action="../scripts/contactFormResponse.php">
+        <form id="contactForm" action="../scripts/contactFormResponse.php" method="post" >
             <table>
                 <tr>
-                    <td><input id="firstName" type='text' placeholder="First Name"></td>
-                    <td><input id="lastName" type='text' placeholder="Last Name"></td>
+                    <td><input id="firstName" name="firstName" type='text' placeholder="First Name"></td>
+                    <td><input id="lastName" name="lastName" type='text' placeholder="Last Name"></td>
                 </tr>
                 <tr>
-                  <td colspan="2"><input id="email" type="text" placeholder="Email Address" /></td>
+                  <td colspan="2"><input id="email" name="email" type="text" placeholder="Email Address" /></td>
                 </tr>
                 <tr>
-                  <td colspan="2"><input id="message" type="text" placeholder="Leave a message!" /></td>
+                  <td colspan="2"><input id="message" name="message" type="text" placeholder="Leave a message!" /></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input id="submit" type="submit" value="Send Message"></td>
+                    <td colspan="2"><input id="submit" name="submit" type="submit" value="Send Message"></td>
                 </tr>
             </table>
         </form>

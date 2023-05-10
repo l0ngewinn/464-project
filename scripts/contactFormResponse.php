@@ -4,27 +4,26 @@
   <meta charset="utf-8">
   <title>Contact Me</title>
   <link rel="stylesheet" href="../main.css" />
-  <script src="../scripts/connectToDatabase.php"></script>
 </head>
 
 <body>
     <header>
         <?php
-            include("./connectToDatabase.php");
+            include("connectToDatabase.php");
         ?>
-        <script>
-            $(function() {
-                $("#thankyou").load("../pages/thankyou.html");
-            });
-        </script>
     </header>
     <main>
         <article>
-            <?php 
-                include("../scripts/registrationFormProcess.php")
-            ?>
-            <div id="thankyou">
+            <div class="back">
+                <a href="../main.html"><h2>GO BACK</h2></a>
             </div>
+            <div class="thankyou">
+                <h1>Thank you for contacting me!</h1>
+                <d1>I will get back to you shortly.</d1>
+            </div>
+            <?php 
+                include("contactFormProcess.php")
+            ?>
         </article>
     </main>
 </body>

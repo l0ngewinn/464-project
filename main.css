@@ -168,6 +168,7 @@ a:active {
     padding: 25px;
     background-color: bisque;
     border-radius: 16px;
+    box-shadow: 15px;
 }
 
 #firstName {    
@@ -202,6 +203,17 @@ a:active {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+#option {
+    padding-top: 5vh;
+}
+
+#submitWater {
+    margin-top: 25px;
+    background-color: darkgoldenrod;
+    border-radius: 16px;
+    color: white;
 }
 
 /* thankyou.html */

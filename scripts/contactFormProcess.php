@@ -1,7 +1,6 @@
 <?php
-    echo 'accessed process form';
     $query = "INSERT INTO contact(
-        firstname, lastName, 
+        firstName, lastName, 
         email, 
         message
     ) 
@@ -10,14 +9,7 @@
         '$_POST[email]',
         '$_POST[message]'
     );";
-    
     $success = mysqli_query($db, $query);
-    if ($success) {
-        echo 'success';
-        header('Location: ../pages/thankyou.html');
-    } else {
-        echo 'error';
-    }
-    mysqli_close($db)
-    header('Location: ../pages/thankyou.html');
+
+    mysqli_close($db);
 ?>
